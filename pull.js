@@ -1,6 +1,6 @@
 let numOfClicks = 0;
 function getMovie() {
-    let url = 'http://www.omdbapi.com/?i=tt3896198&apikey=25182b57&t=';
+    let url = 'https://www.omdbapi.com/?i=tt3896198&apikey=25182b57&t=';
     let userInput = document.getElementById('movieTitle').value;
     url += userInput;
     numOfClicks++;
