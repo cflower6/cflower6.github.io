@@ -4,7 +4,7 @@ function getMovie() {
     let userInput = document.getElementById('movieTitle').value;
     url += userInput;
     numOfClicks++;
-
+    document.body.innerHTML = "";
     let req = new XMLHttpRequest();
     req.open('GET', url);
     req.onload = function () {
