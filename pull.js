@@ -4,7 +4,6 @@ function getMovie() {
     let userInput = document.getElementById('movieTitle').value;
     url += userInput;
     numOfClicks++;
-    document.body.innerHTML = "";
     let req = new XMLHttpRequest();
     req.open('GET', url);
     req.onload = function () {
@@ -12,10 +11,13 @@ function getMovie() {
         let img = new Image();
 
         let h3 = document.getElementById('title');
+        h3 = "":
         h3.append(movie.Title);
         let p = document.getElementById('desc');
+        p = "";
         p.append(movie.Plot);
         let space_img = document.getElementById('space_img');
+        space_img = "";
         space_img.append(img);
         img.src = movie.Poster;
 
